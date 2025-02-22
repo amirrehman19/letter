@@ -14,7 +14,6 @@ BODY = ("Te quiero / Te amo\n"
         " Je t’aime\n"
         "Ti amo\n")
 
-
 # Function to send email
 def send_email():
     try:
@@ -38,8 +37,7 @@ def send_email():
     except Exception as e:
         print(f"Error: {e}")
 
-
-# Send email every minute
+# Send email every 5 seconds
 while True:
     send_email()
-    time.sleep(1800)  # Wait 60 seconds before sending the next email
+    time.sleep(1800)  # Wait 5 seconds before sending the next email
