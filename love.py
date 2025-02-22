@@ -42,4 +42,4 @@ def send_email():
 # Send email every minute
 while True:
     send_email()
-    time.sleep(5)  # Wait 60 seconds before sending the next email
+    time.sleep(1800)  # Wait 60 seconds before sending the next email
